@@ -42,7 +42,7 @@
       var dayId_ = 0;
       function changeTheDay() {
         dayId_ = document.getElementById('inputField').value;
-        myGameInstance.SendMessage('Manager', 'DayId', dayId_)
+        myGameInstance.SendMessage('TheMenuManager', 'GetTheDayId', dayId_)
       }
       
       var container = document.querySelector("#unity-container");
