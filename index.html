@@ -39,7 +39,7 @@
       </div>
     </div>
     <script>
-      var dayId_ = 0;
+      var dayId_ = "0";
       function changeTheDay() {
         dayId_ = document.getElementById('inputField').value;
         myGameInstance.SendMessage('TheMenuManager', 'GetTheDayId', dayId_)
@@ -107,8 +107,8 @@
     </script>
 
 <div>
-<input style="height:45px; padding-left:15px;" type="text" placeholder="Current Day..." id="inputField"></input>
-<button class="button" onclick="changeTheDay()" type="button">Pass Day Id</button>
+    <input style="height:45px; padding-left:15px;" type="text" placeholder="Current Day..." id="inputField"></input>
+    <button class="button" onclick="changeTheDay()" type="button">Pass Day Id</button>
 </div>
     
   </body>
